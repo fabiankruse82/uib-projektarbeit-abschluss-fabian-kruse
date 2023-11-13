@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"
+      defer></script>
     <title>Dungeons and Dragons - Overview</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=MedievalSharp&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=MedievalSharp&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet" />
   </head>
-  <body>
-    
+  <body data-lang="en" x-data="{ lang: 'en' }">
     <div class="hero-image">
       <div class="hero-text">
         <h1>Dungeons & Dragons</h1>
@@ -24,82 +27,186 @@
       <a href="#">Pen & Paper</a>
       <a href="games.html">Games</a>
       <a href="screen.html">On Screen</a>
+      <a href="sale.html">%Sale</a>
+      <a href="map.html"> Map of Faerûn</a>
 
       <div class="right-nav">
-        <a href="#">Language</a>
-        <a href="#">Contact</a>
+        <button x-on:click="lang = 'en'">
+          <img
+            src="image/australianflag.jpg"
+            alt="Australian Flag"
+            style="width: 20px; height: 15px; margin-right: 5px" />
+          Australian
+        </button>
+        <button x-on:click="lang = 'de'">
+          <img
+            src="image/Flag_of_Berlin.svg.png"
+            alt="German Flag"
+            style="width: 20px; height: 15px; margin-right: 5px" />
+          Berlinerisch
+        </button>
+        <a href="contact.html">Contact</a>
         <a href="#">About</a>
         <a href="#">Legal</a>
       </div>
     </nav>
-    
-      <p><em> Dungeons & Dragons (D&D) is a tabletop role-playing game (RPG) that has
-      been a cornerstone of the gaming world since its initial release in 1974.
-      Created by Gary Gygax and Dave Arneson, D&D is often considered the first
-      and most influential role-playing game, setting the stage for a wide range
-      of similar games that followed.</em> </p>
-      <h2>Core Concepts:</h2><ul>
-      <li>At the heart of D&D is the concept of role-playing. Players assume the roles of
-      fictional characters in a fantasy world, each with their own unique
-      abilities, skills, and personalities.</li>
-      <li> One player, known as the Dungeon
-      Master (DM), serves as the storyteller and referee, guiding the narrative
-      and controlling the non-player characters (NPCs) and the world. </li>
-      <li>Game Mechanics: D&D is driven by a set of rules and mechanics that govern
-      character creation, combat, exploration, and interaction. The ruleset has
-      evolved over various editions, each refining and expanding upon the
-      previous ones. The most recent edition as of my last knowledge update in
-      2022 is the 5th Edition (D&D 5E), which gained widespread popularity for
-      its accessibility and flexibility. </li>
-      <li>Dice Rolling: Central to D&D is the use
-      of polyhedral dice, typically including the iconic 20-sided die (d20).
-      Players roll dice to determine the outcomes of actions, such as attacking
-      an enemy, avoiding traps, or persuading an NPC. The results are often
-      modified by the characters' abilities, skills, and other factors.</li></ul>
-      <h2>Gameplay Structure:</h2><ul>
-      <li>Campaigns: D&D adventures are typically organized into
-      campaigns, which are long-term story arcs. A campaign can span numerous
-      sessions, taking characters from humble beginnings to epic levels of
-      power. Campaigns often feature overarching plots, quests, and challenges
-      that players must navigate. </li>
-      <li>Sessions: A typical D&D session involves the
-      players gathering around a table (or virtually, in online games) to engage
-      in the ongoing story. Sessions can last several hours and usually involve
-      a mix of combat encounters, exploration, and role-playing interactions.
-      Character Creation: Classes and Races: Players create characters by
-      choosing a race (like elves or dwarves) and a class (such as wizard,
-      rogue, or fighter). Each combination provides unique abilities and skills.
-      The characters' development is tracked through experience points gained
-      during gameplay. </li>
-      <li>Alignment: Characters in D&D are often defined by their
-      alignment, a combination of their moral and ethical stance. Alignments
-      range from lawful good to chaotic evil, influencing how characters
-      approach situations and interact with others.</li>
-      <h2> The D&D Community:</h2><ul>
-      <li>Expansions and Settings: D&D has a rich history of expansions and campaign
-      settings. These can range from classic medieval fantasy to more exotic
-      settings, allowing players to explore worlds inspired by various
-      mythologies, literature, or entirely original creations. </li></ul>
-      <h2>Pop Culture Impact:</h2> <ul>
-      <li>D&D has had a profound impact on popular culture, inspiring
-      novels, movies, TV shows, and video games. References to D&D tropes, such
-      as dungeons, dragons, and character classes, are widespread in
-      contemporary media. Online and Offline Play: Virtual Platforms: In
-      addition to traditional tabletop play, D&D has adapted to modern
-      technology. Online platforms like Roll20 and Fantasy Grounds allow players
-      to engage in virtual tabletop experiences, especially useful for remote
-      play. Streaming and Actual Play: The rise of streaming services has
-      brought D&D to a broader audience. Popular shows like Critical Role
-      showcase live-play sessions with voice actors, adding an additional layer
-      of entertainment to the gaming experience. </li></ul>
-      <p> <strong> Dungeons & Dragons
-      is more than just a game; it's a collaborative storytelling experience
-      that fosters creativity, teamwork, and imagination. With its enduring
-      legacy, D&D continues to be a cultural phenomenon, bringing people
-      together to embark on epic adventures in fantastical worlds. Whether
-      played around a kitchen table or in the virtual realm, the spirit of D&D
-      lies in the shared journey of exploration and storytelling.</strong></p>
-    </section>
-    
+
+    <div x-show="lang === 'en'">
+      <p class="intro1">
+        <em>
+          G'day, legends! Dungeons & Dragons (D&D) is a ripper tabletop
+          role-playing game (RPG) that's been an absolute legend in the gaming
+          world since its first release in '74. Cooked up by Gary Gygax and Dave
+          Arneson, D&D is fair dinkum considered the first and most influential
+          role-playing game, paving the way for heaps of other games that jumped
+          on the bandwagon.</em
+        >
+      </p>
+      <h2>Core Concepts:</h2>
+      <ul>
+        <li>
+          At the heart of D&D is the idea of role-playing. Players chuck on the
+          hats of made-up characters in a fantasy world, each with their own
+          ripper abilities, skills, and personalities.
+        </li>
+        <li>
+          One player, known as the Dungeon Master (DM), is the storyteller and
+          ref, guiding the yarn and controlling the non-player characters (NPCs)
+          and the world.
+        </li>
+        <li>
+          Game Mechanics: D&D runs on a set of rules and mechanics that call the
+          shots on character creation, combat, exploration, and yarn-spinning.
+          The rules have had a few facelifts in different editions, and the
+          latest, as of my last chinwag in 2022, is the 5th Edition (D&D 5E), a
+          real hit for being easy-going and flexible.
+        </li>
+        <li>
+          Dice Rolling: Fair dinkum, rolling dice is the beating heart of D&D,
+          especially the classic 20-sided die (d20). Players chuck 'em to suss
+          out what goes down, like smacking an enemy, dodging traps, or
+          sweet-talking an NPC. The results often get a tweak from the
+          characters' abilities, skills, and other bits and bobs.
+        </li>
+      </ul>
+      <h2>Gameplay Structure:</h2>
+      <ul>
+        <li>
+          Campaigns: D&D adventures are usually cooked up in campaigns,
+          long-term story sagas. A campaign can stretch over heaps of sessions,
+          taking characters from square one to epic levels of muscle. Campaigns
+          usually dish up big-picture plots, quests, and challenges that players
+          have to tackle.
+        </li>
+        <li>
+          Sessions: A classic D&D sesh has players gathering 'round a table (or
+          virtually, online) to dive into the ongoing story. Seshes can run for
+          yonks and usually mix in a bit of a blue with combat, exploration, and
+          role-playing antics. Character Creation: Classes and Races: Players
+          knock up characters by picking a race (like elves or dwarves) and a
+          class (wizard, rogue, or fighter). Each combo gives unique skills and
+          abilities. The characters' growth is tracked through XP earned during
+          gameplay.
+        </li>
+        <li>
+          Alignment: Characters in D&D often get a label based on their moral
+          compass. Alignments go from lawful good to chaotic evil, shaping how
+          characters handle situations and mingle with others.
+        </li>
+      </ul>
+      <h2>The D&D Community:</h2>
+      <ul>
+        <li>
+          Expansions and Settings: D&D has a ripper history of add-ons and
+          campaign settings. They can swing from classic medieval fantasy to
+          more out-there setups, letting players explore worlds inspired by all
+          sorts of myths, stories, or totally new creations.
+        </li>
+      </ul>
+      <h2>Pop Culture Impact:</h2>
+      <ul>
+        <li>
+          D&D has left a fair dinkum mark on pop culture, inspiring books,
+          movies, TV shows, and video games. References to D&D stuff, like
+          dungeons, dragons, and character classes, are all over the shop in
+          today's media. Online and Offline Play: Virtual Platforms: Besides the
+          good old tabletop play, D&D has hitched a ride on modern tech. Online
+          spots like Roll20 and Fantasy Grounds let players dive into virtual
+          tabletop action, top for playing from afar. Streaming and Actual Play:
+          The rise of streaming services has flung D&D to a wider mob. Shows
+          like Critical Role are all about live-play seshes with voice actors,
+          adding an extra layer of fun to the gaming experience.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Dungeons & Dragons is more than just a game; it's a ripper,
+          collaborative storytelling bash that stirs up creativity, teamwork,
+          and imagination. With its lasting legacy, D&D keeps bringing folks
+          together to kick off epic adventures in fair-dinkum fantastical
+          worlds. Whether you're having a crack around the kitchen table or
+          diving into the virtual realm, the true-blue spirit of D&D is all
+          about the shared journey of discovery and storytelling.</strong
+        >
+      </p>
+    </div>
+
+    <div x-show="lang === 'de'">
+      <p class="intro1">
+        <em
+          >Dungeons & Dragons (D&D) is'n Pen-&-Paper-Rollenspiel (RPG), det
+          seit'ner erstmaligen Veröffentlichung im Jahr 1974'n Eckpfeiler vonner
+          Gaming-Welt is. Entwickelt von Gary Gygax und Dave Arneson, wird D&D
+          ooft als det erste und einflussreichste Rollenspiel betrachtet, det
+          die Bühne für ne Vielzahl ähnlicher Spiele bereitet hat.</em
+        >
+      </p>
+      <h2>Kernkonzepte:</h2>
+      <ul>
+        <li>
+          Im Herzen von D&D steht det Konzept vom Rollenspiel. Spieler
+          übernehmen die Rollen fiktiver Charaktere inna Fantasy-Welt, jeder mit
+          einzigartigen Fähigkeiten, Fertigkeiten und Persönlichkeiten.
+        </li>
+        <li>
+          Ein Spieler, bekannt als der Dungeon Master (DM), macht den Babbel und
+          entscheidet, wer wat auf'm Kerbholz hat, lenkt die Handlung und
+          kontrolliert die Nicht-Spieler-Charaktere (NSCs) und die Welt.
+        </li>
+        <li>
+          Spielmechanik: D&D wird von 'nem Satz Regeln und Mechaniken
+          angetrieben, die die Charaktererstellung, den Keilerei, die Erkundung
+          und die Quasselbude regeln. Det Regelwerk hat sich über verschiedene
+          Editionen weiterentwickelt, wobei jede die vorherige verfeinert und
+          erweitert hat. Die zuletzt bekannte Edition bis zu meinem letzten
+          Wissensupdate im Jahr 2022 is die 5. Edition (D&D 5E), die wegen ihrer
+          Zugänglichkeit und Flexibilität weit verbreitet beliebt is.
+        </li>
+        <li>
+          Würfelwurf: Zentral für D&D is die Verwendung von Polyeder-Würfeln,
+          die in der Regel den ikonischen 20-seitigen Würfel (d20) einschließen.
+          Spieler werfen Würfel, um die Ergebnisse von Aktionen zu bestimmen,
+          wie det Angehen von'n Feind, det Vermeiden von Fallen oder det
+          Überreden von'n NSC. Die Ergebnisse werden oft durch die Fähigkeiten,
+          Fertigkeiten und andere Faktoren der Charaktere modifiziert.
+        </li>
+      </ul>
+      <h2>Spielaufbau:</h2>
+      <ul>
+        <!-- ... Weitere übersetzte Inhalte für den Spielaufbau ... -->
+      </ul>
+      <!-- Weitere übersetzte Abschnitte... -->
+      <p>
+        <strong
+          >Dungeons & Dragons is mehr als'n bloßes Zocken; det is ne kollektive
+          Erzählung, die Kreativität, Teamwork und Vorstellungskraft ankurbbelt.
+          Mit sein Erbe bleibt D&D'n kulturelles Phänomen, det Leute
+          zusammentreibt, um epische Abenteuer inne fabelhaften Welten zu
+          erleben. Egal, ob am Tisch oder im digitalen Dschungel, det Herz von
+          D&D schlägt in der geteilten Reise der Erkundung und
+          Geschichtenerzählung.</strong
+        >
+      </p>
+    </div>
   </body>
 </html>

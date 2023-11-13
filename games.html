@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"
+      defer></script>
     <title>Dungeons and Dragons - On Screen</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,12 +36,34 @@
       </div>
     </nav>
 
-    <section class="eye-of-the-beholder-2-the-legend-of-darkmoon">
+    <div style="text-align: center">
+      <p>Text before the first iframe</p>
+      <iframe
+        src="https://playminigames.net/de/item/embed?name=eye-of-the-beholder-auge-des-betrachters"
+        style="width: 900px; height: 545px; margin: 0 auto; display: block"
+        frameborder="0"></iframe>
+      <p>Text after the first iframe</p>
+    </div>
+
+    <div
+      class="eye-of-the-beholder-2-the-legend-of-darkmoon"
+      style="text-align: center">
+      <p>Text before the second iframe</p>
       <iframe
         class="eob2"
         src="https://playminigames.net/embed/eye-of-the-beholder-2-the-legend-of-darkmoon"
-        style="width: 900px; height: 545px"
+        style="width: 900px; height: 545px; margin: 0 auto; display: block"
         frameborder="0"></iframe>
-    </section>
+      <p>Text after the second iframe</p>
+    </div>
+  </body>
+</html>
+<div
+      class="eye-of-the-beholder-2-the-legend-of-darkmoon"
+      style="text-align: center">
+      <p>Text before the second iframe</p>
+      <iframe src="https://playminigames.net/embed/dark-sun-shattered-lands" style="width: 900px; height: 545px;" frameborder="0"></iframe>
+      <p>Text after the second iframe</p>
+    </div>
   </body>
 </html>
