@@ -363,3 +363,14 @@ button {
   padding: 3px 12px;
   @include border-radius(8px);
 }
+.text-container {
+  background-color: rgba(255, 255, 255, 0.5); /* 50% white opacity */
+  color: #000; /* Black font color */
+  padding: 20px; /* Add padding for better readability */
+  margin-bottom: 20px; /* Add margin between text containers */
+}
+
+/* Increase the height of YouTube video containers by 50% */
+.video-container iframe {
+  height: 945px; /* Assuming the original height is 630px */
+}
