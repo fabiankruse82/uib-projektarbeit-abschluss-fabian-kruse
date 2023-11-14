@@ -22,17 +22,28 @@
       </div>
     </div>
 
-    <nav>
+     <nav>
       <a href="index.html">Overview</a>
-      <a href="#">Pen & Paper</a>
+      <a href="pnp.html">Pen & Paper</a>
       <a href="games.html">Games</a>
       <a href="screen.html">On Screen</a>
+      <a href="sale.html">%Sale</a>
+      <a href="map.html"> Map of Faerûn</a>
 
       <div class="right-nav">
-        <a href="#">Language</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Legal</a>
+        <button x-on:click="lang = 'en'; console.log('Switched to English')">
+  <img src="image/australianflag.jpg" alt="Australian Flag" style="width: 20px; height: 15px; margin-right: 5px" />
+  Australian
+</button>
+
+<button x-on:click="lang = 'de'; console.log('Switched to Berlinerisch')">
+  <img src="image/Flag_of_Berlin.svg.png" alt="German Flag" style="width: 20px; height: 15px; margin-right: 5px" />
+  Berlinerisch
+</button>
+
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="legal.html">Legal</a>
       </div>
     </nav>
 
@@ -42,10 +53,36 @@
         src="https://playminigames.net/de/item/embed?name=eye-of-the-beholder-auge-des-betrachters"
         style="width: 900px; height: 545px; margin: 0 auto; display: block"
         frameborder="0"></iframe>
-      <p>Text after the first iframe</p>
+      <div x-show="lang === 'de'" class="text-container">Janz unten inne Tiefen von Waterdeep, wa, da spielst'e "Eye of the Beholder". Dit is' so'n Dungeon-Kracher von Westwood Studios und SSI. Ick sach dir, det Ding is' 'n echter Brecher, dit Rollenspiel. Ick erzähl dir mal wat darüber.
+
+Ick fang ma' mitte Story an, wa. Du und deine Crew, det sind so vier abgefahrene Gestalten, landet innerhalb vonne Dungeons von Waterdeep. Det is' so'n verdammter Irrgarten, ey. Du biste auf 'ner Mission, um 'ne entführte Adlige zu retten. Abba, ey, det is' nich so einfach, weil da drin ham se Fallen, Monster, und mehr Mumpitz als du "tschüss" sagen kannz.
+
+Det geile is', du kannz deine Gruppe selbst zusammenpfeffern. Abba pass uff, wa, jeder hat so seine Macken und Stärken. Vonne Bogenschützen bis zum Kämpfer, alles dabei. Ick sach dir, det is' so, als würdeste 'ne Berliner Truppe fürne Dungeon-Party rüsten.
+
+Die Grafiken sind für damalige Zeiten 'n Knaller, obwohl et jetzt im Vergleich vielleicht etwas altbacken aussieht. Dit is' so Pixel-Charme, wa. Du kannz det Spiel aus der Ego-Perspektive zocken, und die Dungeons sind so düster und voller Geheimnisse, allet janz im Berliner-Style.
+
+Wat mir echt jefällt, is' die Mucke. Det is' so 'ne Mischung aus Abenteuer und düsterem Techno, wat dir so'n richtigen Berliner Dungeon-Flair gibt. Ick sach dir, bei manchen Tracks krichte ooch 'n bisschen Gänsehaut.
+
+Aber ick muss dir ooch wat sagen, wa. Dit Ding is' nich ohne. Da musse richtig taktieren, Fallen umkurven, Zaubersprüche sinnvoll einsetzen, und die richtigen Items sammeln. Sonst biste schneller in deinem eigenen Grab als du "ick bin'ne Berliner" sagen kannz.
+
+Allet in allet, wa, "Eye of the Beholder" is' so 'n zeitloser Klassiker. Wenn'e uff Retro-Games stehste und Bock auf 'ne richtig fiese Dungeon-Herausforderung hasse, dann is' dit wat für dich. Aber nich heulen, wenn det wat für Fortgeschrittene is', wa. Det is' Berliner Durchsetzungsvermögen, Freunde. Viel Spaß beim Dungeon-Abenteuer!</div>
+      
+<div x-show="lang === 'en'" color="black">Alright, "Eye of the Beholder" kicks off in the Dungeons of Waterdeep, a bit like navigating the hidden laneways of Melbourne. Developed by Westwood Studios and rolled out by SSI, it's a classic dungeon-crawling RPG, fair dinkum.
+
+Your crew finds themselves dropped into the deep end of Waterdeep, a maze of twists and turns that'll leave you more disoriented than a tourist in the Sydney CBD. Your mission? Rescue an abducted noble, of course. But let me tell ya, it's no walk in the park. You'll face traps, monsters, and more twists than a Bondi surfer.
+
+What's ripper is you can cobble together your own crew. From archers to brawlers, it's like assembling your own footy team. But watch out, everyone's got their quirks and strengths. It's a bit like picking your squad for a weekend BBQ match.
+
+The graphics rock that classic retro style, mate. Pixel charm that's like an old-school street art piece in Fitzroy. But I'll tell ya, the vibe is pure Waterdeep. It's like wandering the gritty streets of St Kilda after dark.
+
+The battles are fair dinkum intense. None of that soft stuff here, mate. You've got to plan, strategize, and use your noggin like you're outsmarting a bunch of magpies during swooping season.
+
+And the music, mate! It's like a blend of epic adventure and techno beats, echoing through the dungeons like the distant sound of a rave in the bush.
+
+To sum it up, "Eye of the Beholder" is a timeless classic with an Aussie twist. If you're into retro games and fancy a challenging dungeon adventure with a bit of Aussie flavor, give it a burl. I tell ya, it's like tackling the great Aussie bushwalk, but with more monsters and less sunscreen. Enjoy the dungeon crawl, mate!</div>
     </div>
 
-    <div
+    <div>
       class="eye-of-the-beholder-2-the-legend-of-darkmoon"
       style="text-align: center">
       <p>Text before the second iframe</p>
@@ -54,16 +91,73 @@
         src="https://playminigames.net/embed/eye-of-the-beholder-2-the-legend-of-darkmoon"
         style="width: 900px; height: 545px; margin: 0 auto; display: block"
         frameborder="0"></iframe>
-      <p>Text after the second iframe</p>
+      <p><div x-show="lang === 'de'" class="text-container">Also, dit zweite Kapitel vonne Geschichte packt dit nächste Level an Action und Intrigen obendrauf. Du und deine Truppe landet wieder inne Tiefen vonne Dungeons, diesma' in Darkmoon. Dit is' so 'n verfluchter Ort, voller Rätsel und Gefahren. Det fängt schon beim Eingang an, wa.
+
+Wat echt abgefahren is', du kannz deinen Charakter von det ersten Teil mitnehmen, wa. Dit is' wie so'n Wiedersehen mit ollen Kumpels. Und ick sach dir, det is' Berliner Solidarität, wenn du ooch ma' vonne alten Helden profitieren kannz.
+
+Die Dungeons sin' diesma' noch fieser, mit mehr Gängen, Mumpitz und Fallen als je zuvor. Dit is' so, als obte dir durch die Katakomben von Berliner Geschichte kämpfst. Det is' ooch 'ne richtig dicke Herausforderung, wa. Ohne kluge Taktik und richtige Ausrüstung biste so schnell ma' nich am Ziel.
+
+Det geile is' ooch, dit Spiel lässt dich noch mehr in die Details gehen. Du kannz mit den Leuten in Darkmoon quatschen, Quests annehmen und kieken, wat se so zu erzählen ham. Dit is' so'n bisschen wie auf 'n Berliner Kiez, wa, wo jeder wat zu sagen hat.
+
+Die Grafiken sind natürlich wieder dit Beste von damals. Dit is' so Retro-Charme, wa. Allet in Pixel und trotzdem so, dass du dir die Tiefen von Darkmoon vorstellen kannz. Und ooch die Musik, wa, die bringt dir so'n bisschen Berliner Melancholie mitten inne Dungeon-Hölle.
+
+Aber ick muss dir sagen, wa, dit is' nix für Anfänger. Hier wird dir so richtig de Zähne zeigen, wa. Ohne richtige Planung und cleveres Vorgehen wirste dit nich packen. Det is' wie bei 'nem Berliner Imbiss – ohne Senf is' det nur halb so lecker.
+
+Fazit: "Eye of the Beholder 2 - Legend of Darkmoon" is' det nächste Level vonne Dungeon-Reihe. Wenn'e det erste Teil jut fandest und Bock uff noch mehr Action und Intrigen hast, dann kannz'e dir dit ruhig mal jeben. Aber wa' dir bewusst, wa, det is' so 'n Hardcore-Dungeon-Crawl. Viel Erfolg und möge der Berliner Pfefferspray mit dir sein!</div></p>
+      <div x-show="lang === 'en'" color="black">Alrighty, "Eye of the Beholder 2 - Legend of Darkmoon" is the next instalment in the dungeon-crawling saga by Westwood Studios and SSI. Strap yourself in, mate!
+
+Your crew finds themselves knee-deep in the dungeons again, this time in Darkmoon. It's like navigating the twists and turns of a Sydney back alley, but with more monsters and magic.
+
+What's ripper is you can bring your characters from the first game along for the ride. It's like reuniting with old mates at a pub in Melbourne. I tell ya, there's a sense of camaraderie that's fair dinkum.
+
+The dungeons are even trickier this time, with more nooks, crannies, and traps than a secret bush campsite. It's like trying to find your way through the Aussie bush at night, mate. You've gotta be smart and well-equipped, or you'll be as lost as a kangaroo in the city.
+
+What's tops is that the game lets you dive even deeper into the nitty-gritty. You can chat with the locals in Darkmoon, take on quests, and hear what the cobbers have to say. It's like striking up a yarn with the characters at your local Aussie pub, full of gossip and tall tales.
+
+The graphics are true blue retro, mate. It's pixel charm, like a classic Aussie surf sticker on a beat-up old board. But I'll tell ya, the vibe is fair dinkum Legend of Darkmoon. It's like soaking in the atmosphere of a bush bonfire under the Southern Cross.
+
+The battles are fair dinkum challenging. It's not a walk in the park, mate. You've gotta figure out how to make the most of your crew and outmaneuver those nasties like you're dodging drop bears.
+
+And what I love, mate – the music. It's a mix of mystical tunes and echoes of the bush. It's like listening to a didgeridoo solo under a starry Outback sky.
+
+To wrap it up, "Eye of the Beholder 2 - Legend of Darkmoon" is like a walkabout through the dungeons with a fair dinkum Aussie touch. If you enjoyed the first game and fancy more action and intrigue with an Aussie flair, give it a burl. I tell ya, it's like embarking on a bush adventure in the heart of the Blue Mountains. Enjoy the dungeon crawl, mate!</div>
     </div>
   </body>
 </html>
-<div
+<div></div>
       class="eye-of-the-beholder-2-the-legend-of-darkmoon"
       style="text-align: center">
       <p>Text before the second iframe</p>
       <iframe src="https://playminigames.net/embed/dark-sun-shattered-lands" style="width: 900px; height: 545px;" frameborder="0"></iframe>
-      <p>Text after the second iframe</p>
+      <p><div x-show="lang === 'de'" class="text-container">6Also, in "Dark Sun: Shattered Lands" bist'e nich in irgendeinem Fantasy-Klischee unterwegs, sondern in der Dark-Sun-Welt. Dit is' so 'ne dystopische, postapokalyptische Wüstenlandschaft. Det is' so, als obte durch die öde Ecke von Berliner Nachkriegszeit latscht.
+
+Deine Truppe, wa, landet mitten inne Sklaverei-Geschichte und muss sich aus det Schlamassel befreien. Ick sach dir, dit is' 'ne harte Nummer. Du stehst vor Entscheidungen, wa, die deinen Weg durch die Düsterheit beeinflussen. Dit is' wie bei 'nem Berliner Kreuzberger Alternativ-Laden – immer wat zu entscheiden.
+
+Wat wirklich krass is', sind die Ressourcen in det Game. Det is' nich so, dass du dir einfach mal'n Kühlschrank aufmachen kannz. Hier is' dit eher so, dass dir Sand durch de Hände rinnt und du dir überlegst, obte ooch wat zu saufen hast. Dit is' so 'n bisschen wie 'ne Durststrecke in Berliner Sommerhitze.
+
+Die Grafiken sin' natürlich Retro-Style, wa. Dit is' Pixel-Charme, wie bei 'nem alten Graffiti an der Mauer. Aber ick sach dir, die Atmosphäre is' so richtig Dark Sun. Dit is' so 'ne Mischung aus Staub und Verzweiflung, wie wenn de uffm Kottbusser Tor nachts durch die Straßen ziehst.
+
+Die Kämpfe sin' hier ooch janz schön knackig. Dit is' nix für Warmduscher, wa. Du muss dir überlegen, wie du det Beste aus deiner Truppe rausholst und wat die besten Berliner Taktiken sind, um durchzukommen.
+
+Und det jefällt mir echt, wa – die Musik. Dit is' so 'ne Mischung aus orientalischen Klängen und Berliner Techno, wa. Det zieht dir so richtich in deinen Bann, wie wenn de uff'n Kreuzberg Open-Air stehst.
+
+Fazit: "Dark Sun: Shattered Lands" is' wie'n Trip durch die finsteren Ecken von Dark Sun. Wenn'e Bock uff 'n düsteres, postapokalyptisches Abenteuer mit janz viel Berliner Flair hast, dann jib det ma' 'n Schuss. Ick sach dir, det is' so, als würdeste durch die Straßen vonne verlassenen City West streifen. Aber wa' dir bewusst – det is' wie uffm Kottbusser Damm, wa. Ick hoffe, det jibt dir wat zu denken. Viel Spaß inne Wüste!</div></p>
+      <div x-show="lang === 'en'" color="black">
+G'day mate! Sure thing, I'll give you a rundown on "Dark Sun: Shattered Lands" with an Aussie touch. Let's dive in, eh?
+
+Righto, in "Dark Sun: Shattered Lands," you ain't trotting through your typical fantasy setup, mate. It's set in the Dark Sun world, a post-apocalyptic desert landscape. It's like wandering through the Aussie Outback, but with mutants and slavers thrown in the mix.
+
+Your crew finds themselves smack bang in the middle of a slavery gig, and you've got to sort yourself out of that pickle. I tell ya, it's a tough nut to crack. You're facing decisions that'll shape your path through the bleakness. It's a bit like navigating through the choices at a bush pub in the middle of nowhere.
+
+What's truly bonkers are the resources in this game. It's not like opening a fridge and grabbing a cold one. Here, it's more like sand slipping through your fingers, and you're pondering if you've got anything to drink. It's a bit like a dry spell in the scorching Aussie summer heat.
+
+The graphics are all retro-style, mate. It's got that pixel charm, like an old piece of street art. But I'll tell ya, the atmosphere is true Dark Sun. It's a blend of dust and despair, like wandering the streets of a deserted mining town in the middle of the Aussie bush.
+
+The battles here are fair dinkum tough, mate. It's not for the faint-hearted. You've got to figure out how to get the best out of your crew and strategize like you're facing off against a mob of roos.
+
+And what I really dig, mate – the music. It's a mix of oriental tunes and Aussie techno vibes. It grabs you by the ears, like standing at an outdoor rave in the Aussie bush.
+
+Wrap it up, "Dark Sun: Shattered Lands" is like a journey through the dark corners of Dark Sun with a fair dinkum Aussie flair. If you're up for a dark, post-apocalyptic adventure with a touch of Aussie vibes, give it a rip. I tell ya, it's like trekking through the Outback, but watch out – it's as unpredictable as the backstreets of Sydney. Hope that gives you a fair dinkum insight. Enjoy the desert trek, mate!</div>
     </div>
   </body>
   <footer>

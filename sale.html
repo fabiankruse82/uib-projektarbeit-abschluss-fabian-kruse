@@ -22,16 +22,30 @@
 
     <nav>
       <a href="index.html">Overview</a>
-      <a href="#">Pen & Paper</a>
+      <a href="sale.html">Pen & Paper</a>
       <a href="games.html">Games</a>
       <a href="screen.html">On Screen</a>
       <a href="sale.html">%Sale</a>
+      <a href="map.html"> Map of Faerûn</a>
 
       <div class="right-nav">
-        <a href="#">Language</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Legal</a>
+        <button x-on:click="lang = 'en'">
+          <img
+            src="image/australianflag.jpg"
+            alt="Australian Flag"
+            style="width: 20px; height: 15px; margin-right: 5px" />
+          Australian
+        </button>
+        <button x-on:click="lang = 'de'">
+          <img
+            src="image/Flag_of_Berlin.svg.png"
+            alt="German Flag"
+            style="width: 20px; height: 15px; margin-right: 5px" />
+          Berlinerisch
+        </button>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="legal.html">Legal</a>
       </div>
     </nav>
 

@@ -374,3 +374,88 @@ button {
 .video-container iframe {
   height: 945px; /* Assuming the original height is 630px */
 }
+      '#faerun {
+      max-width: 100%;
+      width: 100vw;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+       #faerunContainer {
+      position: relative;
+    }
+
+    #faerunOverlay {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      opacity: 0.5;
+      pointer-events: none; /* Allow clicks to go through the overlay */
+    }
+    body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* ... (your existing styles) */
+
+
+      #faerunContainer {
+        position: relative;
+      }
+
+      #faerunOverlay,
+      #secondOverlay {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      #secondOverlay {
+        top: 150px;
+        left: 150px;
+        background-color: red; /* Different color for the second overlay */
+        /* Add other styles specific to the second overlay */
+      }
+
+      #faerun {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      #description,
+      #secondDescription {
+        position: relative;
+      }
+
+      h2 {
+        position: absolute;
+        top: 50px; /* Adjust the position as needed */
+        left: 50px; /* Adjust the position as needed */
+        color: white; /* Text color for the h2 */
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        display: none; /* Hide by default, show on hover */
+      }
+
+      #faerunLink:hover #faerunOverlay,
+      #faerunLink:hover #secondOverlay,
+      #faerunLink:hover h2,
+      #faerunLink:hover #secondDescription {
+        display: block;
+      }

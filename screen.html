@@ -14,14 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=MedievalSharp&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet" />
   </head>
-    <body data-lang="en" x-data="{ lang: 'en' }">
+  <body data-lang="en" x-data="{ lang: 'en' }">
     <div class="hero-image">
-      <!-- Your hero image content remains unchanged -->
+      <div class="hero-text">
+        <h1>Dungeons & Dragons</h1>
+        <p>A small overview over a popcultural phenomenon</p>
+      </div>
     </div>
 
-     <nav>
+    <nav>
       <a href="index.html">Overview</a>
-      <a href="#">Pen & Paper</a>
+      <a href="pnp.html">Pen & Paper</a>
       <a href="games.html">Games</a>
       <a href="screen.html">On Screen</a>
       <a href="sale.html">%Sale</a>
@@ -43,8 +46,8 @@
           Berlinerisch
         </button>
         <a href="contact.html">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Legal</a>
+        <a href="about.html">About</a>
+        <a href="legal.html">Legal</a>
       </div>
     </nav>
     <div class="video-container">
@@ -59,7 +62,7 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-      <div class="text-container">
+      <div x-show="lang === 'de'" class="text-container">
         <p>
           Moin, Kumpel! Die "Dungeons & Dragons" animierte Fernsehserie, die 1983 debütiert hat, is' 'n echter Klassiker im Reich von Fantasy-Animation, sach' ick dir. Entwickelt von Kevin Paulsen, hat die Show locker auf dem beliebten Tischrollenspiel mit dem gleichen Namen aufgebaut. Lass ma' die Serie zerlegen mit 'ner ausführlichen Abhandlung, die verschiedene Punkte beleuchtet und mit 'ner erdachten Bewertung abschließt:
 
@@ -81,6 +84,37 @@ Gesamtbewertung: 4/5. "Dungeons & Dragons" verdient 'ne solide Bewertung für ih
         </p>
       </div>
     </div>
+<div x-show="lang === 'en'" color="black">
+Check this out, the "Dungeons & Dragons" animated telly series, kickin' off back in '83, is a fair dinkum classic in the realm of fantasy animation, ya reckon? Cooked up by Kevin Paulsen, the show's laid-back on the popular tabletop role-playing game with the same moniker. Let's rip into the series with a fair-dinkum yarn, sheddin' light on different bits and pieces and cappin' it off with a made-up rating:
+
+Rundown:
+"Dungeons & Dragons" shadows the adventures of six young blokes—Hank, Eric, Sheila, Bobby, Diana, and Presto—who mysteriously find themselves in the realm of Dungeons & Dragons while takin' a wild ride on a rollercoaster at the theme park. Guided by the mysterious Dungeon Master, the kids embark on a quest to find their way home, bumping into heaps of magical creatures, tricky landscapes, and powerful foes along the way.
+
+Storytelling:
+The series shines with its storytelling, weavin' a ripper tale that mixes epic fantasy elements with character-driven plotlines. Each episode showcases the main characters facing new challenges and foes, with teamwork, guts, and personal growth in the spotlight.
+
+Characters:
+The diverse and well-developed ensemble cast gives each group member unique skills and personalities. From the brave leader Hank to the shy but clever Presto, the characters complement each other, creatin' a ripper group dynamic that hooks the audience.
+
+Animation:
+Considering the tech limitations of the time, the animation's fair dinkum commendable. Even if it might not meet the standards of contemporary animation, the visuals effectively capture the essence of the fantasy genre. The character designs and imaginative settings add to the immersive quality of the show.
+
+Themes:
+"Dungeons & Dragons" explores themes like mateship, bravery, and the eternal tussle between good and evil. The series weaves in moral lessons without waggin' the finger, making it suitable for a younger crowd while still offering depth for older viewers.
+
+Legacy:
+The show's left a lasting legacy in the hearts of fans, becoming a nostalgic touchstone for those who grew up with it. Despite its relatively short run of three seasons, "Dungeons & Dragons" has held onto a loyal fanbase over the decades.
+
+Ratings (Made-up):
+Storytelling: 4.5/5. Gripping plots and character development contribute to a convincing tale. Characters: 4/5. Well-defined characters with unique traits enhance the viewing experience. Animation: 3.5/5. Considering the era, the animation's commendable, even if it might seem a bit dated to modern eyes. Themes: 4/5. Successfully integrates moral lessons without compromising the fantasy adventure. Legacy: 5/5. The enduring popularity and nostalgic value cement its status as a classic.
+
+Overall Rating:
+4/5. "Dungeons & Dragons" earns a fair dinkum rating for its timeless appeal, effective storytelling, and lasting influence on the fantasy genre in animation. Even if some bits might show their age, the series remains a treasured part of the cultural landscape for fans of all ages, mate.
+</div>
+
+
+
+
 
     <div class="video-container">
       <div class="text-container">
@@ -94,7 +128,7 @@ Gesamtbewertung: 4/5. "Dungeons & Dragons" verdient 'ne solide Bewertung für ih
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-      <div class="text-container">
+       <div x-show="lang === 'de'">
         <p>
           Ahoi, Kumpel! Also, det Dingen spielt ab im magischen Kiez namens Izmer, wo die wichtigen Leute, die Zauberer, den normalen Kiezern, den "Normalos," det Leben schwer machen. Die junge Kaiserin Savina hat Bock, da 'nen Aufstand anzuzetteln, um die Ungerechtigkeit zu korrigieren, aber der zwielichtige Erzmagier Profion is' überhaupt nich' dabei. Der will alles so lassen, wie det is', und selbst als großer Boss durchstarten.
 
@@ -109,8 +143,9 @@ Damodar schnappt sich det Ding, und Ridley folgt ihm durch 'ne Dimensionspforte 
 Ein Happy End bringt Frieden und Freiheit für alle Izmeriter und die Hoffnung, dass Snails ein Comeback hinlegt. Det offene Ende zeigt die Crew, wie sie in unbekannte Dimensionen aufbricht, um ihn aufzuspüren. 'N echtes Abenteuer, det!nkum adventure, that one!
         </p>
       </div>
+      <div x-show="lang === 'en'" color="black"> Chuck a look at this, the whole shebang's goin' down in the magic hood called Izmer, where the bigwigs, the wizards, are givin' the regular folks, the "Normies," a rough time. Young Empress Savina's keen as a bean to stir up a rebellion and set things right, but the shady Archmage Profion ain't havin' a bar of it. He's keen to keep things as they are and become the big boss himself. In a sneaky scheme, they're lookin' to nick the Empress's golden scepter, which controls a bunch of golden dragons. But Savina hears about a red scepter that's supposed to be even more powerful. Fate brings together a group of characters: Marina, a magic student; Ridley and Snails, two young dodgers; and Elwoods, a rough-as-guts dwarf. They're your typical role-playin' adventurers, and they've got the Scarlet Brigades, Profion's lackeys, hot on their heels. A mysterious scroll leads them through a test with the Thieves' Guild, connects them with wood elves, and a tracking dog named Norda. They embark on a quest to find the red scepter before Profion gets his mitts on it. A romance brews between Ridley and Marina, but the demonic lackey Damodar kidnaps the gals to his castle. The rescue mission goes pear-shaped, and Snails bites the dust. As things heat up in the High Council and a civil war looms, our battered heroes reach the camp of the forest folk. There, they learn a bit about the nature of the dragons that control the scepters. The golden dragons are the source of all magic in Izmer, but the red dragons are on a ruthless rampage. If they win, it's curtains for the good guys. After a night of passion between Ridley and Marina, they crack the code on the scroll, leading them to a cave and the red scepter. Damodar snags the thing, and Ridley follows him through a dimensional portal to the towers of the Magic School. There, a battle rages between the golden and red dragons. Ridley takes down Damodar because he hurt Marina, and just as it all hits the fan, Profion gets chomped by a golden dragon before he can off Savina. A happy ending brings peace and freedom for all Izmerites and the hope that Snails makes a comeback. The open ending shows the crew heading into unknown dimensions to track him down. A fair dinkum adventure!</div>
       <div class="video-container">
-        <div class="text-container">
+        <div x-show="lang === 'de'" class="text-container">
           <p>Text before the first iframe</p>
         </div>
         <iframe
@@ -121,7 +156,7 @@ Ein Happy End bringt Frieden und Freiheit für alle Izmeriter und die Hoffnung, 
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
-        <div class="text-container">
+        <div x-show="lang === 'de'" class="text-container">
           <p>
             Also, vor dem Bau war dieser Typ Edgin Darvis bei den Harpers, wa, diesen Friedenshütertypen. Seine Alte hat's von ein paar Rotmagier-Anhängern erwischt, die er verhaftet hat. 'ne verdammt traurige Sache, det.
 
@@ -144,31 +179,28 @@ Die Crew kehrt zurück, verteilt Forges Reichtümer mit 'nem Heißluftballon üb
 Edgin benutzt das Tablet, um Holga zurückzubringen, kapiert, dass er seine Alte aus egoistischen Gründen zurückhaben wollte, während Holga zur wahren Familie geworden war. Doric deutet 'ne Sache mit Simon an. Der alte Lord von Neverwinter erklärt sie zu Helden, und Xenk schickt Forge nach Revel's End, wo er festsitzt, nachdem seine Begnadigung geflunkert wurde, genau wie Edgin und Holga damals. 'N echtes Abenteuer, det.
           </p>
         </div>
+        <div x-show="lang === 'en'" color="black">Have a squiz at this yarn, right? Before the whole shebang, this bloke Edgin Darvis was with the Harpers, ya know, those peacekeeper types. His missus copped it from a few Red Wizard fans he'd nabbed. A real tearjerker, that.
+
+So, with his mate Holga Kilgore, they tried to start fresh, do a bit of pinching. Along for the ride were this dodgy wizard called Simon Aumar, a rogue named Forge Fitzwilliam, and this mysterious sheila named Sofina. They were trying to nick this "Tablet of Reawakening" to bring back Edgin's missus. Ended up in a raid at a Harper pub, the others scarpered, leaving Edgin and Holga high and dry.
+
+Spent two years in the clink in Revel's End, freezing their arses off. Didn't know they'd been pardoned, so they busted out and headed to Neverwinter. Turns out Forge, their old mate, is now the big cheese there after the previous Lord carked it mysteriously. And he fed Edgin's daughter Kira a yarn that her old man was a greedy bugger who got what he deserved.
+
+Turns out Sofina's a Red Wizard, and she conned Edgin and Holga. She's tryin' to get rid of them, but they leg it and decide to nick stuff from Forge's hideout during the High Sun Games to prove their innocence and get Kira back. The Tablet's the key.
+
+They rope in Simon, and he reckons they should also grab Doric, a druid fighting against Forge's dodgy deforestation. Doric can turn into a fly, so he checks out that Forge's vault is protected by a wizard named Mordenkainen. Simon reckons a magical relic, "The Helm of Disjunction," might sort it.
+
+They visit Holga's ancestors at the cemetery, briefly bringin' them to life with a talisman. The corpses spill the beans that the Helm is with a Paladin named Xenk Yandar, who skipped from Thay when things went pear-shaped with the undead hordes. One corpse is left "alive" because they didn't ask enough questions.
+
+Edgin swears to share any loot they get with the folks, and Xenk leads them through the underworld to get the Helm. They cop a hiding from Thayan assassins, but manage to dodge a massive red dragon. Simon struggles with the power of the Helm, so they decide to use a staff to get into the vault during the games.
+
+Simon and Holga sneak in, but it's a trap. Sofina, disguised as Kira, decks Edgin. They get captured and forced into the games, but manage to leg it from the stadium. Doric figures out Forge is loading a boat to escape. They nick the boat, rescue Kira, and realize Sofina manipulated the games to turn the crowd into undead with a Thayan curse.
+
+The crew comes back, spreads Forge's riches over the city with a hot air balloon, saves people from the stadium before Sofina's curse kicks in. She loses the plot, but Simon pulls himself together, lifts Sofina's time-stop spell, and Kira slaps an anti-magic bracelet on her. Doric takes down Sofina in an owl form, and she cops it under falling debris. Holga cops a fatal injury.
+
+Edgin uses the Tablet to bring Holga back, realizes he wanted his missus back for selfish reasons while Holga had become his true family. Doric hints at something with Simon. The old Lord of Neverwinter declares them heroes, and Xenk sends Forge to Revel's End, where he's stuck after his pardon was a fib, just like Edgin and Holga's back in the day. A real ripper adventure, that.</div>
       </div>
     </div>
-     <div class="right-nav">
-        <button x-on:click="lang = 'en'">
-          <img src="image/australianflag.jpg" alt="Australian Flag" style="width: 20px; height: 15px; margin-right: 5px" />
-          Australian
-        </button>
-        <button x-on:click="lang = 'de'">
-          <img src="image/Flag_of_Berlin.svg.png" alt="German Flag" style="width: 20px; height: 15px; margin-right: 5px" />
-          Berlinerisch
-        </button>
-        <a href="contact.html" x-text="lang === 'en' ? 'Contact' : 'Kontakt'"></a>
-        <a href="#" x-text="lang === 'en' ? 'About' : 'Über uns'"></a>
-        <a href="#" x-text="lang === 'en' ? 'Legal' : 'Rechtlich'"></a>
-      </div>
-    </nav>
-
-    <!-- Your video containers and content remain unchanged -->
-
-    <footer>
-      <p x-text="lang === 'en' ? 'Author: Hege Refsnes' : 'Autor: Hege Refsnes'"></p>
-      <p><a href="mailto:dontcontact@gmail.com" x-text="lang === 'en' ? 'Contact' : 'Kontakt'"></a></p>
-    </footer>
-  </body>
-</html>
+     
   </body>
  <footer>
   <p>Author: Hege Refsnes</p>

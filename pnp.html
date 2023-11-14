@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js"
+      defer></script>
+    <title>Dungeons and Dragons - Overview</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=MedievalSharp&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body data-lang="en" x-data="{ lang: 'en' }">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Dungeons & Dragons</h1>
+        <p>A small overview over a popcultural phenomenon</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="pnp.html">Pen & Paper</a>
+      <a href="games.html">Games</a>
+      <a href="screen.html">On Screen</a>
+      <a href="sale.html">%Sale</a>
+      <a href="map.html"> Map of Faerûn</a>
+
+      <div class="right-nav">
+        <button x-on:click="lang = 'en'">
+          <img
+            src="image/australianflag.jpg"
+            alt="Australian Flag"
+            style="width: 20px; height: 15px; margin-right: 5px" />
+          Australian
+        </button>
+        <button x-on:click="lang = 'de'">
+          <img
+            src="image/Flag_of_Berlin.svg.png"
+            alt="German Flag"
+            style="width: 20px; height: 15px; margin-right: 5px" />
+          Berlinerisch
+        </button>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="legal.html">Legal</a>
+      </div>
+    </nav>
+    <div x-show="lang === 'en'" color="black">
+      Dungeons and Dragons Overview: Dungeons and Dragons (D&D) is the
+      granddaddy of tabletop role-playing games, originating in the '70s and
+      evolving into the cultural phenomenon it is today. It's a game where a
+      group of mates, guided by a Dungeon Master (DM), creates characters and
+      immerses themselves in a collaborative story filled with adventure,
+      danger, and magic. The game's heart lies in its d20 system – rolling a
+      20-sided die to determine the success or failure of various actions.
+      Forgotten Realms: Imagine a continent as vast and diverse as Australia,
+      filled with bustling cities, treacherous dungeons, and sprawling
+      wilderness – that's the Forgotten Realms for you. It's the default setting
+      for many D&D campaigns, a rich tapestry of lore, cultures, and histories.
+      Cities of Splendors: At the heart of the Forgotten Realms lies the City of
+      Waterdeep, a metropolis that makes Sydney look like a quiet seaside town.
+      It's a hub of commerce, intrigue, and adventure. The City of Splendors is
+      surrounded by the Sword Coast, a region teeming with diverse landscapes
+      and cultures. The Dalelands: Venture east, and you'll find yourself in the
+      Dalelands, a collection of self-governing communities nestled in forests
+      and hills. It's like the Aussie bush but with elves, dwarves, and magic
+      woven into the very fabric of the land. Elminster and the Archmages: If
+      you're thinking about iconic figures, Elminster Aumar, the Sage of
+      Shadowdale, is like the Crocodile Dundee of the Forgotten Realms. A
+      powerful wizard with a penchant for meddling in mortal affairs, Elminster
+      adds a touch of whimsy and wisdom to the lore. Dark Sun: Now, let's wander
+      into the dusty, brutal realm of Dark Sun, where the sun beats down like a
+      relentless Aussie summer. Athas – The Desert World: Imagine a world where
+      magic has sucked the life out of the land, leaving behind a vast,
+      unforgiving desert. Athas, the setting for Dark Sun, is a harsh and brutal
+      place where survival is a daily struggle. City-States and Sorcerer-Kings:
+      The remnants of once-great civilizations are now scattered city-states
+      ruled by powerful sorcerer-kings. These despots control the flow of water
+      and life, making the political landscape as cutthroat as a pack of dingoes
+      fighting over a carcass. Thri-Kreen and Mul: If you're tired of the usual
+      fantasy races, Dark Sun has got you covered. Thri-Kreen, insectoid
+      warriors, and Mul, half-dwarves bred for gladiatorial combat, add a unique
+      flavor to the character options. Ravenloft: Prepare yourself for a spooky
+      journey into the gothic horror of Ravenloft, where every shadow hides a
+      potential threat. Domains of Dread: Ravenloft is a collection of domains,
+      each ruled by a darklord trapped in a twisted, nightmarish version of
+      their own creation. It's like stepping into a haunted bush where the
+      ghosts have a personal vendetta. Strahd von Zarovich: The most infamous
+      darklord of Ravenloft is Strahd von Zarovich, a vampire lord with a tragic
+      love story. His castle, Castle Ravenloft, is as iconic as the Sydney Opera
+      House, but with more bats and less music. The Mists: The mysterious Mists
+      are like the bushfires of Ravenloft, separating the domains and making
+      escape nearly impossible. It's an ever-present, foreboding force that
+      keeps the horror alive. Planescape: Now, let's take a leap into the
+      mind-bending multiverse of Planescape, where navigating the cosmos is as
+      confusing as trying to find your way through the Melbourne tram system.
+      Sigil – The City of Doors: At the center of the multiverse lies Sigil, a
+      city that's like the Grand Central Station of reality. Portals to
+      countless planes converge here, creating a melting pot of cultures and
+      creatures. Factions and Philosophy: Planescape introduces factions, groups
+      with unique perspectives on the multiverse. The Dustmen are like
+      existentialists, viewing life as a temporary state, while the Harmonium
+      enforces order like an overzealous referee. Outer Planes: The multiverse
+      in Planescape is divided into the Outer Planes, each representing a
+      particular alignment and cosmic concept. From the lawful goodness of Mount
+      Celestia to the chaotic evil of the Abyss, it's a cosmic journey as
+      diverse as the Australian landscape. Dragonlance: Lastly, let's venture
+      into the epic fantasy realm of Dragonlance, where dragons soar through the
+      skies and legends are born. War of the Lance: Dragonlance kicks off with
+      the War of the Lance, a conflict that shapes the destiny of the world of
+      Krynn. It's like the epic battles of Australia's history but with more
+      dragons and fewer convicts. Dragon Overlords: The land is ruled by dragon
+      overlords, powerful and ancient creatures with schemes as grand as Uluru.
+      These dragons bring a sense of awe and terror to the setting, reminiscent
+      of facing a croc in the wild. The Heroes of the Lance: Dragonlance is
+      known for its iconic characters like Raistlin Majere, the enigmatic and
+      powerful wizard, and Tanis Half-Elven, the reluctant leader. The
+      camaraderie and conflicts among these heroes are as gripping as a kangaroo
+      boxing match. Conclusion: In the vast and diverse landscape of Dungeons
+      and Dragons, each campaign setting is like a different region of Australia
+      – unique, filled with its own challenges and wonders. Whether you're
+      exploring the political intrigue of Waterdeep, surviving the brutal
+      deserts of Dark Sun, facing the horrors of Ravenloft, navigating the
+      cosmic maze of Planescape, or engaging in epic battles in Dragonlance,
+      there's a setting for every adventurer and every taste. So, gather your
+      mates around the campfire (or the gaming table), roll those dice, and let
+      the stories unfold like an epic ballad sung by a bush bard. May your crits
+      be high, and your adventures as legendary as a drop bear sighting! Cheers,
+      mate!
+    </div>
+
+    <div x-show="lang === 'de'">
+      Dungeons and Dragons: 'ne Berliner Reise durch die Kampagnensettings
+      Einleitung Moin Moin, Freunde der Würfel! Hier geht's um Dungeons and
+      Dragons (kurz: D&D), det absolute Brett unter den
+      Pen-and-Paper-Rollenspielen. Dit is so'n Ding, wo man mit Kumpels
+      zusammenkommt, sich 'nen Charakter bastelt und dann durch 'ne Fantasiewelt
+      zieht, voller Abenteuer und Gefahren. Ick erklärs dir mal janz in Ruhe,
+      wa? Was is Dungeons and Dragons? Also, D&D is'n Klassiker unter den
+      Rollenspielen, det schon seit den 70ern die Tische unsicher macht. Jeder
+      Spieler erstellt sich 'nen Charakter mit 'ner eigenen
+      Hintergrundgeschichte, Fähigkeiten und so'n Kram. Die Gruppe wird von 'nem
+      sogenannten Spielleiter (oder Dungeon Master) durch 'ne Welt geführt, die
+      voller Magie, Monster und Mysterien is. Det Besondere an D&D is, dass die
+      Geschichte nicht vorgegeben is wie bei'nem Buch oder'n Film. Die Spieler
+      beeinflussen die Handlung selbst, indem sie Entscheidungen treffen und
+      mit'nem Würfel das Schicksal herausfordern. Die Würfel rollen lassen Ah,
+      die Würfel! Die sind essentiell für D&D. 'ne Vielzahl an unterschiedlichen
+      Würfeln kommen zum Einsatz, von 4-seitigen bis zu 20-seitigen. Zum
+      Beispiel bestimmt der gute alte zwanzigseitige Würfel (der D20) oft den
+      Ausgang von Aktionen. Je höher der Wurf, desto besser die Aktion. Aber
+      manchmal, alder, geht's auch mächtig in die Hose. Berliner Schnauze in der
+      Welt von Dungeons and Dragons So, det war'n kurzer Überblick, jetz komm wa
+      zu det Herzstück – den verschiedenen Kampagnensettings. Ick schwör dir,
+      det is wie'n Ausflug durch'n Kiez, nur eben in 'nem Fantasie-Land.
+      Forgotten Realms: Dit Klassische Erstma ab nach "Forgotten Realms", det is
+      so'n Klassiker. Stell dir vor, du bist in 'ner riesigen Welt, voller
+      verschiedener Rassen wie Elfen, Zwerge, Menschen und 'n Haufen anderer
+      schräger Gestalten. Drachen fliegen durch die Lüfte, Magie is alltäglich
+      und es gibt immer irgendwo'n Abenteuer zu erleben. Die Städte sind groß
+      und vielfältig, von den Elfenwäldern bis zu den zwergischen Bergfestungen.
+      Und wat würdest du denken, wenn ick dir sage, det hier so'n Dorf namens
+      Berlin irgendwo rumliegt? Ja, richtig geraten, det is' ooch dabei. Da
+      würdste dich fühlen wie zu Hause, wa? Greyhawk: Det Old-School-Ding Wenn
+      dir det zu gewöhnlich is, ab nach "Greyhawk". Dit is so'n
+      Old-School-Setting, det is wie'n Retro-Kiez. Hier sind die Wurzeln von D&D
+      zu finden. Klassische Fantasy in Reinform, mit Dungeons, Drachen und jeder
+      Menge Magie. Hier is allet'n bisschen puristischer, det Setting is janz
+      traditionell. Aber ick sach dir, det hat seinen Charme. Wie'n guter alter
+      Berliner Kiez, wo die Zeit stehengeblieben is. Ravenloft: Dunkel, Düster,
+      Dracula Aber vielleicht stehste ja mehr auf'n düsteren Kiez, wa? Dann is
+      "Ravenloft" wat für dich. Hier is es wie in'nem Gruselfilm. Vampire,
+      Werwölfe, und Geister – die ganze Palette is am Start. Det is so'n
+      bisschen det Berlin von D&D, wenn de verstehst, wat ick mein. Die Lande in
+      Ravenloft werden von dunklen Fürsten regiert, die ihre eigenen Regeln
+      haben. Du kannst hier schnell in'nem nebligen Sumpf aus Intrigen und
+      Verrat landen. Aber keen Stress, det is ja det, wat dit Setting so
+      spannend macht. Eberron: Magie meets Techno Wenn dir dit zu düster is und
+      du mehr auf'n Mix aus Magie und Techno stehst, dann ab nach "Eberron". Det
+      is so'n bisschen wie'n Kiez, wo Magie und Maschinen sich 'nen Kiez teilen.
+      Hier fliegen Luftschiffe durch die Lüfte, und Magie is mit Technologie
+      verwoben. Is mal wat anderes, wa? Es gibt Krieg, Intrigen und'n Haufen
+      Abenteuer. Dit is so'n Kiez, wo immer wat los is. Hier kannste auch mal'n
+      Bierchen inner magischen Kneipe zischen und dabei'n Auge auf'n fliegendes
+      Schiff werfen. Dragonlance: Drachen und Düsternis Und wenn du's richtig
+      episch magst, dann is "Dragonlance" wat für dich. Dit is so'n Kiez, wo die
+      Welt am seidenen Faden hängt. Drachen spielen hier'n große Rolle, und es
+      geht um'n Haufen Helden, die sich gegen das Böse stemmen. Die Geschichte
+      is riesig und komplex, mit 'ner Menge Hintergrund und Charakteren. Dit is
+      so'n Kiez, wo immer wat passiert, und jeder Schritt kann die Welt
+      verändern. Fazit So, det waren'n paar Eindrücke von den verschiedenen
+      Dungeons-and-Dragons-Kampagnensettings. Jedes hat seinen eigenen Flair,
+      seine eigenen Regeln und seine eigene Geschichte. Wie in Berlin, wa? Jeder
+      Kiez hat seine Besonderheiten, aber am Ende geht's immer um Abenteuer,
+      Spaß und'n Haufen Würfel. Ick hoffe, det war'n juter Überblick für'n
+      Einstieg. Wenn du jetzt Bock auf'n Abenteuer hast, schnapp dir'n
+      Charakterbogen, setz dich mit deinen Kumpels an den Tisch und lasst die
+      Würfel rollen. Det wird'n Spaß, det kann ick dir versprechen. Viel Erfolg,
+      alder!
+    </div>
+  </body>
+</html>
