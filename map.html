@@ -49,8 +49,7 @@
       <a href="games.html">Games</a>
       <a href="screen.html">On Screen</a>
       <a href="sale.html">%Sale</a>
-      <a href="map.html"> Map of Faerûn</a>
-
+      
       <div class="right-nav">
         <button x-on:click="lang = 'en'">
           <img
@@ -93,20 +92,25 @@
           </a>
         </div>
       </section>
-
+<div x-show="lang === 'en'" class="text-container">
       <section id="description">
         <h2>The Sword Coast</h2>
         <p>
           Waterdeep, also known as the City of Splendors or the Crown of the
-          North,[11] was the most important and influential city in the North
+          North, was the most important and influential city in the North
           and perhaps in all Faerûn. It was a truly marvelous cosmopolitan city
           of great culture that attracted the most talented artisans, artists,
           and scholars from across the Realms, as well as a commercial hub for
-          financial interests along the coast and beyond.[1][12] It was one of
+          financial interests along the coast and beyond. It was one of
           if not the most powerful and influential member-states of the Lords'
           Alliance, the coalition of nations and city-states that sought to
-          maintain order along the Sword Coast and the North.[13]
+          maintain order along the Sword Coast and the North.
         </p>
+      </section>
+      <div x-show="lang === 'de'" class="text-container">
+      <section id="description">
+        <h2>Die Schwertküste</h2>
+      Waterdeep, ooch bekannt als die Pracht der Städte oda det Kronjuwel im Norden, wa' de wichtigste und einflussreichste Stadt im Norden und vielleicht uff der janzen Faerûn. Det war 'ne echt derbe fette Weltstadt mit'n krassen Kulturmix, die die krassesten Handwerker, Künstler, und Gelehrten von überall in den Reichen angezogen hat, und 'n Finanzdrehkreuz für Geschäftsinteressen an der Küste und darüber hinaus. Det war eine der mächtigsten und einflussreichsten Mitgliedsstaaten - wenn nich' der mächtigste - vonne Lords-Allianz, det Bündnis von Nationen und Städtestaaten, die versucht ham, Ordnung an der Schwertküste und im Norden zu halten.</section><div>
       </section>
 
       <section id="secondDescription">

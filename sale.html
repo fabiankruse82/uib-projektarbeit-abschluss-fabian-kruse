@@ -45,8 +45,7 @@
       <a href="games.html">Games</a>
       <a href="screen.html">On Screen</a>
       <a href="sale.html">%Sale</a>
-      <a href="map.html"> Map of Faerûn</a>
-
+      
       <div class="right-nav">
         <button x-on:click="lang = 'en'">
           <img
@@ -69,15 +68,16 @@
     </nav>
 
     <main>
-      <!-- Main Section with Table -->
+            
       <section class="main-section">
+        <div x-show="lang === 'en'" color="black"></div>
         <table class="grid-table">
           <tr>
             <!-- Blank column -->
             
-            <td>Author</td>
-            <td>Cover</td>
-            <td>Digest</td>
+            <td><h3>Author</h3></td>
+            <td><h3>Cover</h3></td>
+            <td><h3>Digest</h3></td>
             <td></td>
             <!-- Blank column -->
           </tr>
@@ -89,18 +89,15 @@
                 src="image/81XmKGIpDlL._SY466_.jpg"
                 alt="The Legend of Drizzt Cover" style="max-width: 50%; height: auto;"/>
             </td>
-            <td><section class="content-text">
-              "The Legend of Drizzt" follows the extraordinary adventures of
-              Drizzt Do'Urden, a dark elf in the Dungeons & Dragons universe.
-              Created by author R.A. Salvatore, the series explores Drizzt's
-              struggles with his identity and morality as he navigates the
-              treacherous Underdark and the surface world. Renowned for his
-              exceptional combat skills and unwavering moral compass, Drizzt
-              becomes an iconic hero, challenging the stereotypes associated
-              with his drow heritage. The series, beginning with "The Crystal
-              Shard," combines thrilling action, intricate world-building, and
-              profound character development, making it a beloved and enduring
-              part of Dungeons & Dragons literature.</section>
+            <td>  <div x-show="lang === 'de'" class="text-container"><section class ="content-text">
+        <p>
+          "Die Legende von Drizzt" erzählt von den außergewöhnlichen Abenteuern von Drizzt Do'Urden, einem Dunkelelf im Dungeons-&-Dragons-Universum. Geschaffen von Autor R.A. Salvatore, erforscht die Serie Drizzts Kampf mit seiner Identität und Moral, während er sich durch die tückische Unterwelt und die Oberflächenwelt bewegt. Bekannt für seine außergewöhnlichen Kampffertigkeiten und seinen unerschütterlichen moralischen Kompass, wird Drizzt zu einem ikonischen Helden, der die Stereotypen seiner Drow-Herkunft herausfordert. Die Serie, beginnend mit "Der Kristallsplitter", vereint aufregende Action, komplexe Weltgestaltung und tiefgreifende Charakterentwicklung und wird so zu einem beliebten und dauerhaften Teil der Dungeons-&-Dragons-Literatur.        </p></section>
+      </div>
+    </div>
+<div x-show="lang === 'en'" color="black"><section class ="content-text">
+"The Legend of Drizzt" follows the extraordinary adventures of Drizzt Do'Urden, a dark elf in the Dungeons & Dragons universe. Created by author R.A. Salvatore, the series explores Drizzt's struggles with his identity and morality as he navigates the treacherous Underdark and the surface world. Renowned for his exceptional combat skills and unwavering moral compass, Drizzt becomes an iconic hero, challenging the stereotypes associated with his drow heritage. The series, beginning with "The Crystal Shard," combines thrilling action, intricate world-building, and profound character development, making it a beloved and enduring part of Dungeons & Dragons literature.
+</section></div>
+       
             </td>
             <td>
               <button>Buy here on Amazon</button>
@@ -148,13 +145,79 @@ A new evil is plaguing the city of Waterdeep, stalking the streets and preying o
           </tr>
           <!-- Additional rows go here -->
         </table>
-      </section>
+      </section></div>
+      <div x-show="lang === 'de'" class="text-container">
+               <table class="grid-table">
+          <tr>
+            <!-- Blank column -->
+            
+            <td><h3>Autor</h3></td>
+            <td><h3>Cover</h3></td>
+            <td><h3>Zusammenfassung</h3></td>
+            <td></td>
+            <!-- Blank column -->
+          </tr>
+          <tr>
+            
+            <td><em>R.A. Salvatore</em></td>
+            <td>
+              <img
+                src="image/81XmKGIpDlL._SY466_.jpg"
+                alt="The Legend of Drizzt Cover" style="max-width: 50%; height: auto;"/>
+            </td>
+            <td><section class="content-text">
+    "Die Sage von Drizzt" erzählt von den außergewöhnlichen Abenteuern von Drizzt Do'Urden, einem Dunkelelf im Dungeons-&-Dragons-Universum. Geschaffen von Autor R.A. Salvatore, erforscht die Serie Drizzts Kampf mit seiner Identität und Moral, während er sich durch die tückische Unterwelt und die Oberflächenwelt bewegt. Bekannt für seine außergewöhnlichen Kampffertigkeiten und seinen unerschütterlichen moralischen Kompass, wird Drizzt zu einem ikonischen Helden, der die Stereotypen seiner Drow-Herkunft herausfordert. Die Serie, beginnend mit "Der Kristallsplitter", vereint aufregende Action, komplexe Weltgestaltung und tiefgreifende Charakterentwicklung und wird so zu einem beliebten und dauerhaften Teil der Dungeons-&-Dragons-Literatur.</section>
+            </td>
+            <td>
+              <button>Buy here on Amazon</button>
+            </td>
+          </tr>
+          <td><em>Ed Greenwood & Co.</em></td>
+            <td>
+              <img
+                src ="image/forgottenrealmssetting.jpg"
+                alt="Cover of forgotten Realms handbook" />
+            </td>
+            <td><section class="content-text">
+    "Dunkle Gefahren und große Taten erwarten dich.
+
+Willkommen in Faerûn, einem Land voller hoher Magie, furchterregender Monster, alter Ruinen und verborgener Wunder. Von den unheilvollen Wäldern der Silbermärkte bis zu den quirligen Städten des Inneren Meeres umfasst Faerûn strahlende Königreiche, von Monstern verseuchte Einöden, endlose Höhlen und finstere Zitadellen. Das Kampagnenbuch „Die Vergessenen Reiche“ präsentiert die umfassendste Fantasy-Welt, die jemals beschrieben wurde!
+
+Dieses Buch enthält alle Details, die du für Dungeons-&-Dragons-Abenteuer im Setting der Vergessenen Reiche benötigst:
+
+Eine neue Vollfarb-Poster-Karte von Faerûn.
+Dutzende neuer Rassen, Fähigkeiten und Prestigeklassen für deine Charaktere.
+Das Faerûnische Pantheon mit über 100 Gottheiten und Kräften.
+Hochdetaillierte Regionen, neue Monster, geheimnisvolle Orte und zwei kurze Abenteuer, um deine Kampagne zu beginnen.
+
+Das Kampagnenbuch der Vergessenen Reiche wurde vollständig aktualisiert und für die neue Ausgabe des D&D-Spiels neu gestaltet. Um dieses Buch vollständig nutzen zu können, benötigst du auch das Spielerhandbuch, das Dungeon Master's Guide und das Monster Manual.</section>
+            </td>
+            <td>
+              <button>Buy here on Amazon</button>
+            </td>
+          </tr>
+          <tr>
+            
+            <td><em>Westwood Studios</em></td>
+            <td>
+              <img
+                src="image/eob1cover.jpg"
+                alt="Cover of the Eye of the behlder video game" style="max-width: 50%; height: auto;"/>
+            </td>
+            <td><section class="content-text">
+    Eine neue Bedrohung heftet sich an die Stadt Waterdeep, streift durch die Straßen und macht sich über die Bürger her. Zunächst dachte man, sie komme von weit her, aber dieses große Übel, nur als Xanathar bekannt, wohnt stattdessen in Waterdeep und droht, die Stadt zu überwältigen, wenn es nicht gestoppt wird. Die Lords von Waterdeep glauben, dass das Böse in den Abwasserkanälen lauert, und haben eine Gruppe von Abenteurern beauftragt, diese niederträchtige Verschwörung zu untersuchen und zu vereiteln. Mit vollständigen Rechten und Besitzansprüchen an jeglichen Schatz, Artefakte oder Wertsachen, die du auf deiner Quest findest, musst du dich in die Abgründe wagen, die Natur dieses Bösen entdecken und es mit allen notwendigen Mitteln zerstören.</section>           </td>
+            <td>
+              <button>Buy here on Steam</button>
+            </td>
+          </tr>
+          <!-- Additional rows go here -->
+        </table></div><
+      </section></div>
     </main>
   </body>
-<footer>
-  <p>Author: Hege Refsnes</p>
-  <p><a href="mailto:dontcontact@gmail.com</a></p>
-</footer>
-</html>
+   <footer>
+        <hr />
+        © 2023 Fabian Kruse
+      </footer>
 </html>
 <
