@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+    <title>Dungeons and Dragons - Overview</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=MedievalSharp&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body data-lang="en" x-data="{ lang: 'en' }">
+    
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Dungeons & Dragons</h1>
+        <p>A small overview over a popcultural phenomenon</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="#">Pen & Paper</a>
+      <a href="games.html">Games</a>
+      <a href="screen.html">On Screen</a>
+      <a href="sale.html">%Sale</a>
+
+      <div class="right-nav">
+        <button x-on:click="lang = 'en'">English</button>
+        <button x-on:click="lang = 'de'">Deutsch</button>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Legal</a>
+      </div>
+    </nav>
+
+    <div x-show="lang === 'en'">
+      <p class="intro1"><em>Dungeons & Dragons (D&D) is a tabletop role-playing game (RPG) that has been a cornerstone of the gaming world since its initial release in 1974. Created by Gary Gygax and Dave Arneson, D&D is often considered the first and most influential role-playing game, setting the stage for a wide range of similar games that followed.</em></p>
+      <!-- ... Rest of the content ... -->
+    </div>
+
+    <div x-show="lang === 'de'">
+      <p class="intro1"><em>Dungeons & Dragons (D&D) ist ein Pen-&-Paper-Rollenspiel (RPG), das seit seiner erstmaligen Veröffentlichung im Jahr 1974 ein Eckpfeiler der Gaming-Welt ist. Entwickelt von Gary Gygax und Dave Arneson, wird D&D oft als das erste und einflussreichste Rollenspiel betrachtet, das die Bühne für eine Vielzahl ähnlicher Spiele bereitet hat.</em></p>
+      <!-- ... Rest of the content ... -->
+    </div>
+
+  </body>
+</html>

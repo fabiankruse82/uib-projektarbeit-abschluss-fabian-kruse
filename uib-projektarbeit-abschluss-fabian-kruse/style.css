@@ -4,7 +4,6 @@ html {
   font-family: "Jura", sans-serif;
   font-family: "MedievalSharp", cursive;
   font-family: "Roboto", sans-serif;
-    font-size: 16px;
 }
 
 /* The hero image */
@@ -13,8 +12,8 @@ html {
     url("image/hero header.jpg");
 
   /* Set a specific height */
- 
-height: 50vh;
+  height: 50%;
+
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   body,
@@ -123,9 +122,10 @@ body {
   max-height: 100vh;
 }
 .intro1 {
-  width: 70%; /* 70% of the parent container */
-  padding: 25px;
+width: 70rem;
+  padding: 25px ;
   box-sizing: border-box;
+  border-color:white;
 
 
 }
@@ -344,10 +344,7 @@ iframe {
   margin-top: 56px; /* Height of the fixed navbar */
   overflow: hidden;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 main img {
   width: 100%;
   height: calc(100vh - 56px); /* Adjusted for the fixed navbar */
@@ -409,6 +406,8 @@ button {
 
 
 
+/* ... (your existing styles) */
+
 
       #faerunContainer {
         position: relative;
@@ -429,7 +428,7 @@ button {
       #secondOverlay {
         top: 793px;
         left: 995px;
-        background-color: purple; /* Different color for the second overlay */
+        background-color: red; /* Different color for the second overlay */
         /* Add other styles specific to the second overlay */
       }
 
@@ -575,9 +574,6 @@ h1 ul li:nth-child(18) {
   background-color: black;
   opacity: 0.7; /* Background opacity (50%) */
   color: white; /* Font color with 0% opacity */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .container {
   display: flex;
@@ -718,19 +714,5 @@ footer hr {
 @media (orientation: landscape) and (max-height: 500px) {
   .footer {
     position: unset;
-  }
-}
-@media only screen and (max-width: 600px) {
-  /* Styles for screens up to 600px wide */
-  body {
-    font-size: 14px;
-  }
-
-  .hero-image {
-    height: 40vh;
-  }
-
-  .intro1 {
-    width: 90%;
   }
 }
